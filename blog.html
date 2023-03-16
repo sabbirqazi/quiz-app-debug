@@ -1,59 +1,126 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css"
-    rel="stylesheet"
-    type="text/css"
-  />
-  <script src="https://cdn.tailwindcss.com"></script>
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Blog</title>
-</head>
-<body>
+  </head>
+  <body>
     <section class="box-border rounded-md m-10 bg-gray-200 p-5">
-        <h1 class="text-3xl text-center font-bold "></h1>
-        <p class="text-2xl text-center"></p>
+      <h1 class="text-3xl text-center font-bold"></h1>
+      <p class="text-2xl text-center"></p>
     </section>
-   
- <section class="">
-      
-     <div class=" box-border rounded-md m-10 bg-gray-800 p-5">
-        <h1 class="text-3xl text-white font-bold mx-10" > Differences among .forEach(), .map(), .filter() & find() :-</h1>
-        <p class="text-2xl text-white  mx-10 my-5"> .forEach(), is used to execute the same code on every element in an array but does not change the array and it returns undefined. <br>
-        .map() executes the same code on every element in an array and returns a new array with the updated elements. <br>
-        .filter() checks every element in an array to see if it meets a certain criteria and returns a new array with the elements that return truthy for the criteria. <br>
-        The find() method returns the first element in an array that passes a test function. The find() executes the callback function for each element in the array until the callback returns a truthy value.
-        If the callback returns a truthy value, the find() immediately returns the element and stops searching. Otherwise, it returns undefined.
-        </p> 
 
-        <H2 class="text-2xl text-white font-bold m-10"></H2>
-        <p class="text-2xl text-white  mx-10"></p>
-     </div>
-     <div class=" box-border rounded-md m-10 bg-gray-800 p-5">
-        <h1 class="text-3xl text-white font-bold mx-10" >Differences among Local Storage , Session Storage & Cookie </h1>
-        <p class="text-2xl text-white  mx-10 my-5">Local storage: We can store data as key/value pairs in a web browser using the local storage web storage technique on the client's computer.This data persists even if the user closes the browser, shuts down their computer, or restarts their browser. <br>
-        We can use the setItem() method to set the data in local storage. This method takes two parameters, key and value. With this method, we can store value with a key. localStorage.setItem(key, value);
-        We can retrieve the data stored in it, we can use the getItem() method. This method takes only one parameter, the key whose value we need to access. localStorage.getItem(key);
-        We can remove the data with the help of the removeItem() method, which is stored in memory about the key. localStorage.removeItem(key);
-     <br>
-     Session Storage: Session storage is similar to local storage, but the data stored in session storage is only available during the current browser session. The data is stored in key-value pairs and can be accessed using JavaScript. Once the browser window is closed, the data is automatically deleted. Session storage can be useful for storing temporary data that is only needed for a single browsing session.
-    <br> Cookies: Cookies are small text files that are stored on a user's browser by websites. Cookies can store user preferences, login information, and other data that can be used to enhance the user experience. Unlike local storage and session storage, cookies are sent to the server with every HTTP request, which can make them slower to retrieve. Cookies can also be set to expire after a certain amount of time.</p>
-        
-     
-     </div>
-     <div class=" box-border rounded-md m-10 bg-gray-800 p-5">
-        <h1  class="text-3xl text-white font-bold mx-10" >
-           What is JS event loop and how it works?
+    <section class="">
+      <div class="box-border rounded-md m-10 bg-gray-800 p-5">
+        <h1 class="text-3xl text-white font-bold mx-10">
+          Write the differences among .forEach(), .map(), .filter() & find() :-
         </h1>
-        <p class="text-2xl text-white  mx-10 my-5"> </p>
-     </div>
-     <div  class=" box-border rounded-md m-10 bg-gray-800 p-5">
-        <h1 class="text-3xl text-white font-bold mx-10"></h1>
-        <p class="text-2xl text-white  mx-10 my-5"></p>
-     </div>
- </section>
-</body>
+        <p class="text-2xl text-white mx-10 my-5">
+          map() creates a new array from calling a function for every array
+          element.We can use it instead of manual for loop iteration.It calls
+          the function for each elements it does not iterate an empty array.It
+          does not change the original array <br />
+          .filter() checks every element in an array to see if it meets a
+          certain criteria and returns a new array with the elements that return
+          truthy for the criteria.This method checks the given values existence
+          when values are exists it return a new array consisting of our certain
+          value <br />
+          .forEach(), is used to execute the same code on every element in an
+          array but does not change the array and it returns undefined. Instead
+          of manual for loop iteration we can use it. It can not iterate an
+          empty array .It it called the callback function once time for each
+          elements <br />
+          The find() method returns the first element in an array that passes a
+          test function. It executes the callback function for each element in
+          the array until the callback returns a truthy value. If the callback
+          returns a truthy value, the find() immediately returns the element and
+          stops searching. Otherwise, it returns undefined.
+        </p>
+      </div>
+      <div class="box-border rounded-md m-10 bg-gray-800 p-5">
+        <h1 class="text-3xl text-white font-bold mx-10">
+          Write the differences among Local Storage , Session Storage & Cookie?
+        </h1>
+        <p class="text-2xl text-white mx-10 my-5">
+          Local storage: We can store data as key/value pairs in a web browser
+          using the local storage web storage technique on the client's
+          computer.This data persists even if the user closes the browser, shuts
+          down their computer, or restarts their browser. <br />
+          We can use the setItem() method to set the data in local storage. This
+          method takes two parameters, key and value. With this method, we can
+          store value with a key. localStorage.setItem(key, value); We can
+          retrieve the data stored in it, we can use the getItem() method. This
+          method takes only one parameter, the key whose value we need to
+          access. localStorage.getItem(key); We can remove the data with the
+          help of the removeItem() method, which is stored in memory about the
+          key. localStorage.removeItem(key);
+          <br />
+          Session Storage: Session storage is similar to local storage, but the
+          data stored in session storage is only available during the current
+          browser session. The data is stored in key-value pairs and can be
+          accessed using JavaScript. Once the browser window is closed, the data
+          is automatically deleted. Session storage can be useful for storing
+          temporary data that is only needed for a single browsing session.
+          <br />
+          Cookies: Cookies are small text files that are stored on a user's
+          browser by websites. Cookies can store user preferences, login
+          information, and other data that can be used to enhance the user
+          experience. Unlike local storage and session storage, cookies are sent
+          to the server with every HTTP request, which can make them slower to
+          retrieve. Cookies can also be set to expire after a certain amount of
+          time.
+        </p>
+      </div>
+      <div class="box-border rounded-md m-10 bg-gray-800 p-5">
+        <h1 class="text-3xl text-white font-bold mx-10">
+          What is JS event loop and how it works?
+        </h1>
+        <p class="text-2xl text-white mx-10 my-5">
+          The JavaScript event loop is a fancy way for JavaScript to handle
+          tasks that take a while to complete. When we run JavaScript, it can
+          only do one thing at a time. But sometimes we need to wait for things
+          like data from the server or user input. If we waited for these things
+          before running the next line of code, our app would freeze up. So
+          instead of waiting, JavaScript uses an event-driven system that goes
+          through a queue of tasks. When one task is done, its corresponding
+          function is added to a stack of things to do. If that function
+          generates more tasks, they are added to the queue too. This keeps
+          going forever, so JavaScript can handle long-winded tasks without
+          holding up the whole app.
+        </p>
+      </div>
+      <div class="box-border rounded-md m-10 bg-gray-800 p-5">
+        <h1 class="text-3xl text-white font-bold mx-10">
+          What does quizTimer function do?
+        </h1>
+        <p class="text-2xl text-white mx-10 my-5">
+          quizTimer function count the time during the submission of quiz.When
+          we click the start quiz button the time counter function began it
+          works.It shows the time we spend to submit the quizzes.It is good to
+          submit the answers within short time. It count our individual submit
+          time and later shows it when we retrieve the data from local storage.
+        </p>
+      </div>
+      <div class="box-border rounded-md m-10 bg-gray-800 p-5">
+        <h1 class="text-3xl text-white font-bold mx-10">
+          What does chooseQuiz function do?
+        </h1>
+        <p class="text-2xl text-white mx-10 my-5">
+          The chooseQuiz function gives us the facility to choose the answers
+          from the option.It sent the given answer to the source where correct
+          answers is stored.It takes our answers and sent it to displayAnswers
+          function by calling it .So, we can also say that chooseQuiz also shows
+          the result of ours in UI.
+        </p>
+      </div>
+    </section>
+  </body>
 </html>
