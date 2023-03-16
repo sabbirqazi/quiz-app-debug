@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
+    <title>Blog</title>
+</head>
+<body>
+    <section class="box-border rounded-md m-10 bg-gray-200 p-5">
+        <h1 class="text-3xl text-center font-bold "></h1>
+        <p class="text-2xl text-center"></p>
+    </section>
+   
+ <section class="">
+      
+     <div class=" box-border rounded-md m-10 bg-gray-800 p-5">
+        <h1 class="text-3xl text-white font-bold mx-10" > Differences among .forEach(), .map(), .filter() & find() :-</h1>
+        <p class="text-2xl text-white  mx-10 my-5"> .forEach(), is used to execute the same code on every element in an array but does not change the array and it returns undefined. <br>
+        .map() executes the same code on every element in an array and returns a new array with the updated elements. <br>
+        .filter() checks every element in an array to see if it meets a certain criteria and returns a new array with the elements that return truthy for the criteria. <br>
+        The find() method returns the first element in an array that passes a test function. The find() executes the callback function for each element in the array until the callback returns a truthy value.
+        If the callback returns a truthy value, the find() immediately returns the element and stops searching. Otherwise, it returns undefined.
+        </p> 
+
+        <H2 class="text-2xl text-white font-bold m-10"></H2>
+        <p class="text-2xl text-white  mx-10"></p>
+     </div>
+     <div class=" box-border rounded-md m-10 bg-gray-800 p-5">
+        <h1 class="text-3xl text-white font-bold mx-10" >Differences among Local Storage , Session Storage & Cookie </h1>
+        <p class="text-2xl text-white  mx-10 my-5">Local storage: We can store data as key/value pairs in a web browser using the local storage web storage technique on the client's computer.This data persists even if the user closes the browser, shuts down their computer, or restarts their browser. <br>
+        We can use the setItem() method to set the data in local storage. This method takes two parameters, key and value. With this method, we can store value with a key. localStorage.setItem(key, value);
+        We can retrieve the data stored in it, we can use the getItem() method. This method takes only one parameter, the key whose value we need to access. localStorage.getItem(key);
+        We can remove the data with the help of the removeItem() method, which is stored in memory about the key. localStorage.removeItem(key);
+     <br>
+     Session Storage: Session storage is similar to local storage, but the data stored in session storage is only available during the current browser session. The data is stored in key-value pairs and can be accessed using JavaScript. Once the browser window is closed, the data is automatically deleted. Session storage can be useful for storing temporary data that is only needed for a single browsing session.
+    <br> Cookies: Cookies are small text files that are stored on a user's browser by websites. Cookies can store user preferences, login information, and other data that can be used to enhance the user experience. Unlike local storage and session storage, cookies are sent to the server with every HTTP request, which can make them slower to retrieve. Cookies can also be set to expire after a certain amount of time.</p>
+        
+     
+     </div>
+     <div class=" box-border rounded-md m-10 bg-gray-800 p-5">
+        <h1  class="text-3xl text-white font-bold mx-10" >
+           What is JS event loop and how it works?
+        </h1>
+        <p class="text-2xl text-white  mx-10 my-5"> </p>
+     </div>
+     <div  class=" box-border rounded-md m-10 bg-gray-800 p-5">
+        <h1 class="text-3xl text-white font-bold mx-10"></h1>
+        <p class="text-2xl text-white  mx-10 my-5"></p>
+     </div>
+ </section>
+</body>
+</html>
